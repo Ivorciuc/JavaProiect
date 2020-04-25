@@ -1,7 +1,24 @@
 package AnimalRescue;
 
 public class Girl {
-    public String Nume = "Robi";
-    public int Money = 300;
+    private String name;
+    private int money;
+
+    public String getNume(){
+        return name;
+    }
+
+    public void setNume(String name){
+        this.name = name;
+    }
+
+    public int getMoney(){
+        return money;
+    }
+
+    public void setMoney(int money){
+        this.money = money;
+    }
+
 
 }

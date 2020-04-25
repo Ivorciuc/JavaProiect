@@ -1,17 +1,106 @@
 package AnimalRescue;
 
 public class Dog {
-    public String name = "Rex";
-    public int age = 4;
-    public String  color = "Brown and white";
-    public String race = "Ciobanesc";
-    public int chipNr = 123123;
-    public float weight = 23.5F;
-    public int NivelulStariiDeSanatate = 10;
-    public int NivelulSenzatieiDeFoame = 1;
-    public int NivelulStariiDeSpirit = 10;
-    public String MancarePreferata = "Banana";
-    public String ActivitatePreferata = "Plimbatul in Parc";
+    private String name;
+    private int age;
+    private String color;
+    private String race;
+    private int chipNr;
+    private float weight;
+    private int nivelulStariiDeSanatate;
+    private int nivelulSenzatieiDeFoame;
+    private int nivelulStariiDeSpirit;
+    private String mancarePreferata;
+    private String activitatePreferata;
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public int getAge(){
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getColor(){
+        return color;
+    }
+
+    public void setColor(String color){
+        this.color = color;
+    }
+
+    public String getRace(){
+        return race;
+    }
+
+    public void setRace(String race){
+        this.race = race;
+    }
+
+    public int getChipnr(){
+        return chipNr;
+    }
+
+    public void setChipnr(int chipnr){
+        this.chipNr = chipnr;
+    }
+
+    public float getWeight(){
+        return weight;
+    }
+
+    public void setWeight(float weight){
+        this.weight = weight;
+    }
+
+    public int getNivelulStariiDeSanatate(){
+        return nivelulStariiDeSanatate;
+    }
+
+    public void setNivelulStariiDeSanatate(int nivelulstariidesanatate){
+        this.nivelulStariiDeSanatate = nivelulstariidesanatate;
+    }
+
+    public int getNivelulSenzatieiDeFoame(){
+        return nivelulSenzatieiDeFoame;
+    }
+
+    public void setNivelulSenzatieiDeFoame(int nivelulsenzatieidefoame){
+        this.nivelulSenzatieiDeFoame = nivelulsenzatieidefoame;
+    }
+
+    public int getNivelulStariiDeSpirit(){
+        return nivelulStariiDeSpirit;
+    }
+
+    public void setNivelulStariiDeSpirit(int nivelulstariidespirit){
+        this.nivelulStariiDeSpirit = nivelulstariidespirit;
+    }
+
+    public String getMancarePreferata(){
+        return mancarePreferata;
+    }
+
+    public void setMancarePreferata(String mancarePreferata){
+        this.mancarePreferata = mancarePreferata;
+    }
+
+    public String getActivitatePreferata(){
+        return activitatePreferata;
+    }
+
+    public void setActivitatePreferata(String activitatePreferata){
+        this.activitatePreferata = activitatePreferata;
+    }
+
 
 
     public void eat(){
