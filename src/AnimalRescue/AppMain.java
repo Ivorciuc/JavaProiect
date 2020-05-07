@@ -11,10 +11,10 @@ public class AppMain {
        rex.setChipnr(166);
        rex.setWeight(23);
        rex.setNivelulStariiDeSanatate(10);
-       rex.setNivelulSenzatieiDeFoame(1);
-       rex.setNivelulStariiDeSpirit(10);
+       rex.setNivelulSenzatieiDeFoame(4);
+       rex.setNivelulStariiDeSpirit(8);
        rex.setMancarePreferata("Bones");
-       rex.setActivitatePreferata("Walking");
+       rex.setActivitatePreferata("Sleeping");
 
 
        System.out.println(" \nThis is the first dog: \n");
@@ -31,53 +31,107 @@ public class AppMain {
        System.out.println("Level of hunger: " + rex.getNivelulSenzatieiDeFoame());
        System.out.println("Mood level: " + rex.getNivelulStariiDeSpirit());
 
+       Cat kitty = new Cat();
+       kitty.setName("Kitty");
+       kitty.setAge(2);
+       kitty.setColor("white");
+       kitty.setRace("Siameza");
+       kitty.setChipnr(423);
+       kitty.setWeight(5);
+       kitty.setNivelulStariiDeSanatate(10);
+       kitty.setNivelulSenzatieiDeFoame(1);
+       kitty.setNivelulStariiDeSpirit(10);
+       kitty.setMancarePreferata("Fish");
+       kitty.setActivitatePreferata("Walking");
+
+       System.out.println(" \nThis is the first cat: \n");
+
+       System.out.println("Name: " + kitty.getName());
+       System.out.println("Color: " + kitty.getColor());
+       System.out.println("Age: " + kitty.getAge());
+       System.out.println("Weight: " + kitty.getWeight());
+       System.out.println("CipNr: " + kitty.getChipnr());
+       System.out.println("Race: " + kitty.getRace());
+       System.out.println("Favorite food: " + kitty.getMancarePreferata());
+       System.out.println("Favorite activity: " + kitty.getActivitatePreferata());
+       System.out.println("Level of health: " + kitty.getNivelulStariiDeSanatate());
+       System.out.println("Level of hunger: " + kitty.getNivelulSenzatieiDeFoame());
+       System.out.println("Mood level: " + kitty.getNivelulStariiDeSpirit());
+
 
        Girl ana = new Girl();
        ana.setNume("Ana");
+       ana.setAge(14);
        ana.setMoney(1000);
 
        System.out.println("\nThis is the girl: \n");
 
        System.out.println("Name: " + ana.getNume());
+       System.out.println("Age: " + ana.getAge());
        System.out.println("Money: " + ana.getMoney());
 
+       Boy alex = new Boy();
+       alex.setNume("Alex");
+       alex.setAge(13);
+       alex.setMoney(250);
 
-       Veterinarian alex = new Veterinarian();
-       alex.setName("Alex");
-       alex.setSpecialization("Muscles");
+       System.out.println("\nThis is the boy: \n");
+
+       System.out.println("Name: " + alex.getNume());
+       System.out.println("Age: " + alex.getAge());
+       System.out.println("Money: " + alex.getMoney());
+
+
+       Veterinarian bogdan = new Veterinarian();
+       bogdan.setName("Bogdan");
+       bogdan.setAge(44);
+       bogdan.setSpecialization("Muscles");
 
        System.out.println("\nThis is the veterinarian: \n");
 
-       System.out.println("Name: " + alex.getName());
-       System.out.println("Specialization: " + alex.getSpecialization());
+       System.out.println("Name: " + bogdan.getName());
+       System.out.println("Age " + bogdan.getAge());
+       System.out.println("Specialization: " + bogdan.getSpecialization());
 
 
-       AnimalFood animalFood = new AnimalFood();
-       animalFood.setNumeMancare("Boabe");
-       animalFood.setNumeMancare1("Oase");
-       animalFood.setCantitate(100);
+       Bones oase = new Bones();
+       oase.setNumeMancare("Bones");
+       oase.setCantitate(100);
 
        System.out.println("\nThis is the animal food: \n");
 
-       System.out.println("First food: " + animalFood.getNumeMancare());
-       System.out.println("Second food: " + animalFood.getNumeMancare1());
-       System.out.println("Amount: " + animalFood.getCantitate());
+       System.out.println("First food: " + oase.getNumeMancare());
+       System.out.println("Amount: " + oase.getCantitate());
+
+       Fish fish = new Fish();
+       fish.setNumeMancare("Fish");
+       fish.setCantitate(23);
+       fish.setExpirationDate("02/06/2020");
+
+       System.out.println("\nThis is the animal food: \n");
+
+       System.out.println("First food: " + fish.getNumeMancare());
+       System.out.println("Amount: " + fish.getCantitate());
+       System.out.println("Expiration Date: " + fish.getExpirationDate());
+
 
        Activities activities = new Activities();
-       activities.setRunning("Running..");
-       activities.setWalking("Walking..");
-       activities.setSitting("Sitting..");
-       activities.setBarking("Barking..");
-       activities.setPlaying("Playing..");
+       activities.setActivity("Running");
+       activities.setActivity("Walking");
+       activities.setActivity("Sitting");
+       activities.setActivity("Barking");
+       activities.setActivity("Playing");
 
 
        System.out.println("\nThose are the activities: \n");
 
-       System.out.println(activities.getRunning());
-       System.out.println(activities.getWalking());
-       System.out.println(activities.getSitting());
-       System.out.println(activities.getBarking());
-       System.out.println(activities.getPlaying());
+       System.out.println("Running..." + activities.getActivity());
+       System.out.println("Walking..." + activities.getActivity());
+       System.out.println("Sitting..." + activities.getActivity());
+       System.out.println("Barking..." + activities.getActivity());
+       System.out.println("Playing..." + activities.getActivity());
+
+
 
 
 

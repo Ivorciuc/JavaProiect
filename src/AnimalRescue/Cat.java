@@ -1,8 +1,6 @@
 package AnimalRescue;
 
-public class Dog extends Animal {
-
-
+public class Cat extends Animal {
     private String race;
     private int chipNr;
     private float weight;
@@ -47,5 +45,23 @@ public class Dog extends Animal {
 
 
 
+    public void eat(){
+        System.out.println("Eating..");
+    }
 
+    public void run(){
+        System.out.println("Running..");
+    }
+
+    public void sleep(){
+        System.out.println("ZzzZZzz..");
+    }
+
+    public void walk(){
+        System.out.println("Paw \n Paw");
+    }
+
+    public void play(){
+        System.out.println("Playing..");
+    }
 }

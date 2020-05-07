@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class AnimalFood {
+public class Food {
     private String numeMancare;
 
     private String numeMancare1;
@@ -15,13 +15,6 @@ public class AnimalFood {
         this.numeMancare = numeMancare;
     }
 
-    public String getNumeMancare1(){
-        return numeMancare1;
-    }
-
-    public void setNumeMancare1(String numeMancare1){
-        this.numeMancare1 = numeMancare1;
-    }
 
     public int getCantitate(){
         return cantitate;
