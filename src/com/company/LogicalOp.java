@@ -93,13 +93,78 @@ public class LogicalOp {
         } else {
             return z;
         }
+    }
+
+    public void OneToOneHunDred(int number) {
+        for (int x = number; x <= 100; x++) {
+            System.out.println(x);
+        }
+    }
 
 
+    public void oneToMinusOneHundred(int number) {
+        for (int x = number; x >= -100; x--) {
+            System.out.println(x);
+        }
+    }
+
+    public void oneToTen(int number, int number1) {
+        for (int x = number; x <= number1; x++) {
+            System.out.println(x);
+        }
+    }
+
+    public void whichIsBigger(int number, int number1) {
+        if (number < number1) {
+            for (int x = number; x <= number1; x++) {
+                System.out.println(x);
+            }
+        } else {
+            for (int y = number1; y <= number; y++) {
+                System.out.println(y);
+            }
+        }
+    }
+
+    public void evenNumbers(int number) {
+        for (int x = number; x <= 100; x++) {
+            if (x % 2 == 0) {
+                System.out.println(x);
+            }
+        }
+    }
+
+    public void oddNumbers(int number) {
+        for (int x = number; x <= 100; x++) {
+            if (x % 2 != 0) {
+                System.out.println(x);
+            }
+        }
+    }
+
+    public void allOneHundred(int number) {
+        int total = 0;
+        for (int x = number; x <= 100; x++) {
+            total += x;
+            System.out.println(total);
+        }
+    }
+
+    public void theAvarage(int number) {
+        float total = 0;
+        for (int x = number; x <= 100; x++) {
+            total += x;
+        }
+        float avarage = total / 100;
+        System.out.println(avarage);
+    }
+
+    public void pattern(int number) {
+        for (int x = number; x >= 1; x--) {
+            for (int y = 1; y <= x; y++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
-
-
-
-
-
-

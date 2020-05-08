@@ -21,6 +21,7 @@ public class Main {
                 cal.printInt4();
                 cal.printInt5();
 
+
                 System.out.println("2.");
                 System.out.println("  " + cal.adunare());
                 System.out.println("  " + cal.impartire());
@@ -33,6 +34,8 @@ public class Main {
                 cal.Celsius();
                 cal.Metri();
                 cal.Distanta();
+
+
                 LogicalOp log = new LogicalOp();
 
                 System.out.println("4.");
@@ -74,6 +77,49 @@ public class Main {
                 System.out.println(log.threeNumbers(x, y, z));
 
 
+                System.out.println("\n-- TEMA JAVA FOR LOOPS: -- ");
+
+                System.out.println("\n1." );
+                log.OneToOneHunDred(1);
+
+                System.out.println("\n2.");
+                log.oneToMinusOneHundred(0);
+
+                System.out.println("\n3.");
+                log.oneToTen(1, 50);
+
+                System.out.println("\n4.");
+                log.whichIsBigger(23,18);
+
+                System.out.println("\n5.");
+                log.evenNumbers(1);
+
+                System.out.println("\n6.");
+                log.oddNumbers(1);
+
+                System.out.println("\n7.");
+                log.allOneHundred(1);
+
+                System.out.println("\n8.");
+                log.theAvarage(1);
+
+                System.out.println("\n9.");
+                log.pattern(7);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -83,10 +129,10 @@ public class Main {
 
 
         }
-
                 public static void printmyname() {
-                        System.out.println("Hello \nAdrian \n");
-                }
+                System.out.println("Hello \nAdrian \n");
+        }
+
 
                 public static void JavaPaint () {
 
