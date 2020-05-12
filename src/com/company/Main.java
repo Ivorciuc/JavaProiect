@@ -89,7 +89,7 @@ public class Main {
                 log.oneToTen(1, 50);
 
                 System.out.println("\n4.");
-                log.whichIsBigger(23,18);
+                log.whichOneIsBigger(23,18);
 
                 System.out.println("\n5.");
                 log.evenNumbers(1);
@@ -105,6 +105,43 @@ public class Main {
 
                 System.out.println("\n9.");
                 log.pattern(7);
+
+
+
+                System.out.println("\n-- TEMA JAVA WHILE LOOPS: -- ");
+                System.out.println("\n1.");
+                log.w1To100();
+
+                System.out.println("\n2.");
+                log.w1ToMinus100();
+
+                System.out.println("\n3.");
+                log.wBetween();
+
+                System.out.println("\n4.");
+                log.wWhichOneIsBigger();
+
+                System.out.println("\n5.");
+                log.wEvenNumbers();
+
+                System.out.println("\n6.");
+                log.wOddNumbers();
+
+                System.out.println("\n7.");
+                log.wTheAvarage();
+
+                System.out.println("\n8.");
+                log.wDivide7();
+
+                System.out.println("\n9.");
+                log.wfibonacci();
+
+                System.out.println("\n10.");
+                log.wCozaLoza();
+
+
+
+
 
 
 

@@ -114,7 +114,7 @@ public class LogicalOp {
         }
     }
 
-    public void whichIsBigger(int number, int number1) {
+    public void whichOneIsBigger(int number, int number1) {
         if (number < number1) {
             for (int x = number; x <= number1; x++) {
                 System.out.println(x);
@@ -146,17 +146,18 @@ public class LogicalOp {
         int total = 0;
         for (int x = number; x <= 100; x++) {
             total += x;
-            System.out.println(total);
-        }
+        }System.out.println(total);
     }
 
     public void theAvarage(int number) {
         float total = 0;
         for (int x = number; x <= 100; x++) {
             total += x;
-        }
-        float avarage = total / 100;
+
+        }float avarage = total / 100;
         System.out.println(avarage);
+
+
     }
 
     public void pattern(int number) {
@@ -167,4 +168,140 @@ public class LogicalOp {
             System.out.println();
         }
     }
+
+    public void w1To100(){
+        int x = 1;
+        while ( x <= 100){
+            System.out.println(x);
+            x++;
+        }
+    }
+
+    public void w1ToMinus100(){
+        int x = 0;
+        while ( x >= -100){
+            System.out.println(x);
+            x--;
+        }
+    }
+
+    public void wBetween(){
+        int x = 1;
+        int y = 9;
+        while ( x <= y){
+            System.out.println(x);
+            x++;
+        }
+    }
+
+    public void wWhichOneIsBigger(){
+        int x = 100;
+        int y = 23;
+        if ( x > y){
+            while ( y <= x){
+                System.out.println(y);
+                y++;
+            }
+        }else{
+            while ( x <= y){
+                System.out.println(x);
+                x++;
+            }
+        }
+    }
+
+    public void wEvenNumbers(){
+        int x = 1;
+        while ( x <= 100){
+
+            if (x % 2 == 0){
+
+                System.out.println(x);
+            }x++;
+        }
+    }
+
+    public void wOddNumbers(){
+        int x = 1;
+        while ( x <= 100){
+
+            if (x % 2 != 0){
+
+                System.out.println(x);
+            }x++;
+        }
+    }
+
+    public void wTheAvarage(){
+        float total = 0;
+        int x = 111;
+        int y = 8898;
+        while( x <= y){
+            x++;
+            total += x;
+        }float  average = total / 8787;
+        System.out.println(average);
+    }
+
+    public void wDivide7(){
+        float total = 0;
+        int x = 7;
+        int y = 200;
+        while (x <= y ){
+            x++;
+            total += x;
+            if (x % 7 == 0){
+            }
+        }float avarage = total / 193;
+        System.out.println(avarage);
+    }
+
+    public void wfibonacci(){
+        int total = 20;
+        int n1 = 0;
+        int n2 = 1;
+        int x = 1;
+        while (x <= total){
+            int sum = n1 + n2;
+            n1 = n2;
+            n2 = sum;
+            x++;
+            System.out.println(n1 + "");
+        }
+    }
+
+    public void wCozaLoza() {
+        int x = 1;
+        while (x <= 110) {
+            if ((x % 3 == 0) && (x % 5 == 0) && (x % 7 == 0)) {
+                System.out.print("CozaLozaWoza");
+            } else if ((x % 7 == 0) && (x % 5 == 0)) {
+                System.out.print("WozaLoza");
+            } else if ((x % 3 == 0) && (x % 5 == 0)) {
+                System.out.print("CozaLoza");
+            } else if ((x % 3 == 0) && (x % 7 == 0)) {
+                System.out.print("CozaWoza");
+            } else if (x % 5 == 0) {
+                System.out.print("Loza");
+            } else if (x % 7 == 0) {
+                System.out.print("Woza");
+            } else if (x % 3 == 0) {
+                System.out.print("Coza");
+            } else {
+                System.out.print(x +"");
+            }
+            x++;
+            if (x % 11 == 0) {
+                System.out.println();
+            }
+
+        }
+    }
+
+
+
+
 }
+
+
+
