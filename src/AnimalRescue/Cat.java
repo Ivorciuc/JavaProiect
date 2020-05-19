@@ -3,8 +3,6 @@ package AnimalRescue;
 public class Cat extends Animal {
     private String race;
     private int chipNr;
-    private float weight;
-
     private String activitatePreferata;
 
 
@@ -25,13 +23,6 @@ public class Cat extends Animal {
         this.chipNr = chipnr;
     }
 
-    public float getWeight(){
-        return weight;
-    }
-
-    public void setWeight(float weight){
-        this.weight = weight;
-    }
 
 
 
@@ -43,25 +34,8 @@ public class Cat extends Animal {
         this.activitatePreferata = activitatePreferata;
     }
 
-
-
-    public void eat(){
-        System.out.println("Eating..");
+    public void speaks(){
+        System.out.println("Meow!");
     }
 
-    public void run(){
-        System.out.println("Running..");
-    }
-
-    public void sleep(){
-        System.out.println("ZzzZZzz..");
-    }
-
-    public void walk(){
-        System.out.println("Paw \n Paw");
-    }
-
-    public void play(){
-        System.out.println("Playing..");
-    }
 }

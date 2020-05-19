@@ -3,8 +3,6 @@ package AnimalRescue;
 public class Food {
     private String numeMancare;
 
-    private String numeMancare1;
-
     private int cantitate;
 
     public String getNumeMancare(){

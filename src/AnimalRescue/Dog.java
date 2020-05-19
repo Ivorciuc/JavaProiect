@@ -2,12 +2,10 @@ package AnimalRescue;
 
 public class Dog extends Animal {
 
-
     private String race;
     private int chipNr;
-    private float weight;
-
     private String activitatePreferata;
+
 
 
 
@@ -27,22 +25,16 @@ public class Dog extends Animal {
         this.chipNr = chipnr;
     }
 
-    public float getWeight(){
-        return weight;
-    }
-
-    public void setWeight(float weight){
-        this.weight = weight;
-    }
-
-
-
     public String getActivitatePreferata(){
         return activitatePreferata;
     }
 
     public void setActivitatePreferata(String activitatePreferata){
         this.activitatePreferata = activitatePreferata;
+    }
+
+    public void speaks(){
+        System.out.println("Woof!");
     }
 
 

@@ -3,6 +3,12 @@ package AnimalRescue;
 public class Animal {
     private String name;
     private int age;
+    private String color;
+    private float weight;
+    private int nivelulStariiDeSanatate;
+    private int nivelulSenzatieiDeFoame;
+    private int nivelulStariiDeSpirit;
+    private String mancarePreferata;
 
     public String getName() {
         return name;
@@ -68,31 +74,20 @@ public class Animal {
         this.mancarePreferata = mancarePreferata;
     }
 
-    private String color;
-    private float weight;
-    private int nivelulStariiDeSanatate;
-    private int nivelulSenzatieiDeFoame;
-    private int nivelulStariiDeSpirit;
-    private String mancarePreferata;
+    public void speaks(){
+        System.out.println("Speak..");
+    }
 
     public void eat(){
-        System.out.println("Eating..");
+        System.out.println("Eating...");
     }
 
     public void run(){
-        System.out.println("Running..");
+        System.out.println("Running...");
     }
 
     public void sleep(){
-        System.out.println("ZzzZZzz..");
-    }
-
-    public void walk(){
-        System.out.println("Paw \n Paw");
-    }
-
-    public void play(){
-        System.out.println("Playing..");
+        System.out.println("ZzzZzzZzz");
     }
 
 

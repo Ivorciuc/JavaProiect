@@ -1,147 +1,56 @@
 package com.company;
 
 public class Calculator {
-    public void printInt() {
-        int MyInt = 100;
-        byte MyByte = 125;
-        short MyShort = 10;
-        float MyFloat = 1.5F;
-        int rezultat = MyInt + MyShort;
-        long MyLong = 15;
-        double MyDouble = 2.33;
-        System.out.println("  " + rezultat);
-
-
-    }
-
-    public  void printInt1() {
-        int MyInt = 100;
-        byte MyByte = 125;
-        short MyShort = 10;
-        float MyFloat = 1.5F;
-        long MyLong = 15;
-        double MyDouble = 2.33;
-        float rezultat1 = MyByte / MyFloat;
-
-        System.out.println("  " + rezultat1);
-    }
-
-    public  void printInt2() {
-        int MyInt = 100;
-        byte MyByte = 125;
-        short MyShort = 10;
-        float MyFloat = 1.5F;
-        long MyLong = 15;
-        double MyDouble = 2.33;
-
-        MyInt = 8;
-        MyByte = -5;
-        MyShort = 6;
-
-        float rezultat2 = MyByte + MyInt * MyShort;
-        System.out.println("  " + +rezultat2);
-    }
-
-    public  void printInt3() {
-        int MyInt = 100;
-        byte MyByte = 125;
-        short MyShort = 10;
-        float MyFloat = 1.5F;
-        long MyLong = 15;
-        double MyDouble = 2.33;
-
-
-        MyInt = 55;
-        MyByte = 9;
-        MyShort = 9;
-
-        float rezultat3 = (MyInt + MyByte) % MyShort;
-        System.out.println("  " + rezultat3);
-    }
-
-    public void printInt4() {
-        int MyInt = 100;
-        byte MyByte = 125;
-        short MyShort = 10;
-        float MyFloat = 1.5F;
-        long MyLong = 15;
-        double MyDouble = 2.33;
-
-
-        MyInt = 20;
-        MyByte = -3;
-        MyShort = 5;
-        MyFloat = 8F;
-
-        float rezultat4 = MyInt + MyByte * MyShort / MyFloat;
-        System.out.println("  " + rezultat4);
-    }
-
-    public  void printInt5() {
-        int MyInt = 100;
-        byte MyByte = 125;
-        short MyShort = 10;
-        float MyFloat = 1.5F;
-        long MyLong = 15;
-        double MyDouble = 2.33;
-        MyInt = 5;
-        MyByte = 15;
-        MyShort = 3;
-        MyFloat = 2F;
-        MyLong = 8;
-        MyDouble = 3;
-
-        float rezultat5 = (float) (MyInt + MyByte / MyShort * MyFloat - MyLong % MyDouble);
-
-        System.out.println("  " + rezultat5);
-    }
-
-
-    public int adunare() {
-
-        int rezultat = 100 + 10;
+    public int add(int x, int y) {
+        int rezultat = x + y;
         return rezultat;
-
     }
 
-    public float impartire() {
-
-
-        int rezultat1 = 100 / 25;
-        return rezultat1;
-
-
+    public float add(byte x, float y) {
+        float rezultat = x + y;
+        return rezultat;
     }
 
-    public int scadere() {
-
-
-        int rezultat2 = 100 - 30;
-        return rezultat2;
+    public int multipli( int y, short z){
+        int rezultat = y * z;
+        return rezultat;
     }
 
-    public  int inmultire() {
-
-
-        int rezultat3 = 100 * 30;
-        return rezultat3;
+    public int multipli(int x, byte y, short z) {
+        int rezultat = (x * y) * z;
+        return rezultat;
     }
 
-    public  void medianumerelor() {
-        int x = 25;
-        int y = 5;
-        int z = 22;
+    public int division(int x, int y) {
+        int rezultat = x / y;
+        return rezultat;
+    }
+
+    public float division(int x, float y, float z) {
+        float rezultat = x / y / z;
+        return rezultat;
+    }
+
+    public double medianumerelor(int x, int y, int z) {
         int Calcul = x + y + z;
         double Media = Calcul / 3;
-        System.out.println("  Media Numerelor este: " + Media);
-
+        return Media;
     }
 
-    public  void restulimpartirii() {
-        int x = 21;
-        int y = 5;
+    public double medianumerelor(int x, short y, short z) {
+        int Calcul = x + y + z;
+        double Media = Calcul / 3;
+        return Media;
+    }
+
+    public  float restulimpartirii(int x, float y) {
+        float Calcul = x % y;
+        return Calcul;
+    }
+
+    public  int restulimpartirii(short x, short y) {
         int Calcul = x % y;
-        System.out.println("  Restul impartirii a doua numere este: " + Calcul);
+        return Calcul;
     }
 
     public void Celsius() {
@@ -163,7 +72,7 @@ public class Calculator {
         System.out.println("  Un inch in Metri este: " + UnMetru);
     }
 
-        public  void Distanta () {
+        public  void Distance () {
             double DistantaInMetri = 100000;
             double TimpulInSecunde = 4 * 60 * 60;
             double MetriPeSecunda;
@@ -180,8 +89,5 @@ public class Calculator {
 
         }
 
-
-
-
-    }
+}
 

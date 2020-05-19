@@ -32,6 +32,9 @@ public class AppMain {
        System.out.println("Level of hunger: " + rex.getNivelulSenzatieiDeFoame());
        System.out.println("Mood level: " + rex.getNivelulStariiDeSpirit());
        rex.speaks();
+       rex.eat();
+       rex.run();
+       rex.sleep();
 
 
 
@@ -62,6 +65,9 @@ public class AppMain {
        System.out.println("Level of hunger: " + kitty.getNivelulSenzatieiDeFoame());
        System.out.println("Mood level: " + kitty.getNivelulStariiDeSpirit());
        kitty.speaks();
+       kitty.eat();
+       kitty.run();
+       kitty.sleep();
 
        Goat macarena = new Goat();
        kitty.setName("Macarena");
@@ -84,6 +90,8 @@ public class AppMain {
        System.out.println("Level of hunger: " + kitty.getNivelulSenzatieiDeFoame());
        System.out.println("Mood level: " + kitty.getNivelulStariiDeSpirit());
        macarena.speaks();
+       macarena.eat();
+       macarena.sleep();
 
 
 
@@ -149,7 +157,6 @@ public class AppMain {
        activities.setActivity("");
        activities.setActivity("");
        activities.setActivity("");
-       activities.setActivity("");
 
 
        System.out.println("\nThose are the activities: \n");
@@ -159,7 +166,6 @@ public class AppMain {
        System.out.println("Sitting..." + activities.getActivity());
        System.out.println("Barking..." + activities.getActivity());
        System.out.println("Playing..." + activities.getActivity());
-       System.out.println("Sleeping..." + activities.getActivity());
 
 
 

@@ -299,6 +299,57 @@ public class LogicalOp {
     }
 
 
+    public int[] arrayto100(){
+        int[] array = new int[100];
+        for (int x = 0; x < 100; x++){
+            array[x] = x;
+        }
+        return array;
+    }
+
+    public void printArray(int[] arrayto100){
+        for (int x = 0; x < arrayto100.length; x++){
+            System.out.println(arrayto100[x]);
+        }
+    }
+
+    public int[] arrayEven(){
+        int[] array = new int[100];
+        for (int x = 0; x < 100; x++){
+            if(x % 2 == 0){
+                System.out.println(x);
+            }
+        }
+        return array;
+    }
+
+    public void printArrayEven(int[] arrayEven){
+        for (int x = 0; x < arrayEven.length; x++){
+        }
+    }
+
+
+
+    public float arrayAvarage(int[] arrayAvarage){
+        float sum = 0;
+        for (int x = 0; x < arrayAvarage.length; x++){
+            sum += arrayAvarage[x];
+        }
+       return  sum / arrayAvarage.length;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

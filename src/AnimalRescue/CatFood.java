@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Fish extends Food {
+public class CatFood extends Food {
 
     private String expirationDate;
 

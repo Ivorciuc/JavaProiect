@@ -1,76 +1,94 @@
 package com.company;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 public class Main {
 
 
         public static void main(String[] args) {
-
-                printmyname();
                 int x = 1;
                 int y = 3;
                 int z = 5;
+                printmyname();
+
                 Calculator cal = new Calculator();
-
                 System.out.println("1.");
-                cal.printInt();
-                cal.printInt1();
-                cal.printInt2();
-                cal.printInt3();
-                cal.printInt4();
-                cal.printInt5();
-
+                System.out.println(" " + cal.add(1, 4));
 
                 System.out.println("2.");
-                System.out.println("  " + cal.adunare());
-                System.out.println("  " + cal.impartire());
-                System.out.println("  " + cal.scadere());
-                System.out.println("  " + cal.inmultire());
+                System.out.println(" " + cal.add((byte)126, 1.5F));
 
                 System.out.println("3.");
-                cal.medianumerelor();
-                cal.restulimpartirii();
+                System.out.println(" " + cal.multipli(5, (short) 3));
+
+                System.out.println("4.");
+                System.out.println(" " + cal.multipli(55, (byte)9, (short)9));
+
+                System.out.println("5. ");
+                System.out.println(" " + cal.division(55, 10));
+
+                System.out.println("6. ");
+                System.out.println(" " + cal.division(55, 1, 10));
+
+                System.out.println("7. ");
+                System.out.println(" " + cal.medianumerelor(25, 5, 22));
+
+                System.out.println("8. ");
+                System.out.println(" " + cal.medianumerelor(10, 2, 2));
+
+                System.out.println("9. ");
+                System.out.println(" " + cal.restulimpartirii(25, 1.5f));
+
+                System.out.println("10. ");
+                System.out.println(" " + cal.restulimpartirii(12, 22));
+
+                System.out.println("\nCelsius:" );
                 cal.Celsius();
+
+                System.out.println("\nMeters:");
                 cal.Metri();
-                cal.Distanta();
+
+                System.out.println("\nDistance:");
+                cal.Distance();
+
+
 
 
                 LogicalOp log = new LogicalOp();
 
-                System.out.println("4.");
+                System.out.println("\n--DE AICI INCEPE LOGICAL OP--");
+
+                System.out.println("1.");
                 int biggest = log.checkBiggerNumber(1,3);
                 System.out.println("  The biggest number is: " + biggest);
 
-                System.out.println("5.");
+                System.out.println("2.");
                 String name = "FastTrackIt";
                 System.out.println(log.checkiftextisFastTrackIt(name));
 
-                System.out.println("6.");
+                System.out.println("3.");
                 String text = "FastTrackIt";
 
                 System.out.println(log.checkiftextisFastTrackItandnumbers(text, x, y));
 
-                System.out.println("7.");
+                System.out.println("4.");
                 x = 6;
                 System.out.println(log.snow(x));
 
-                System.out.println("8.");
+                System.out.println("5.");
                 x = 5;
                 System.out.println(log.numberisgreater(x));
 
-                System.out.println("9.");
+                System.out.println("6.");
                 log.thisisthenumber();
 
-                System.out.println("10.");
+                System.out.println("7.");
                 x = 2;
                 System.out.println(log.isNumberEven(x));
 
-                System.out.println("11.");
+                System.out.println("8.");
                 x= 19;
                 System.out.println(log.isEligibleToVote(x));
 
-                System.out.println("12.");
+                System.out.println("9.");
                 x= 3;
                 y= 2;
                 z= 5;
@@ -138,6 +156,32 @@ public class Main {
 
                 System.out.println("\n10.");
                 log.wCozaLoza();
+
+
+                System.out.println("\n\n-- TEMA JAVA ARRAYS: -- ");
+
+                System.out.println("\n2.");
+                int[] myArray = log.arrayto100();
+                log.printArray(myArray);
+
+
+                System.out.println("\n3.");
+                int[] myArray1 = log.arrayEven();
+                log.printArrayEven(myArray1);
+
+
+                System.out.println("\n4.");
+                System.out.println(log.arrayAvarage(myArray));
+
+                System.out.println("\n5.");
+
+
+
+
+
+
+
+
 
 
 
