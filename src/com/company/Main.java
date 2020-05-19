@@ -166,14 +166,27 @@ public class Main {
 
 
                 System.out.println("\n3.");
-                int[] myArray1 = log.arrayEven();
-                log.printArrayEven(myArray1);
+                int[] arrayEvenPrint = new int[100];
+                log.arrayEven(arrayEvenPrint);
 
 
                 System.out.println("\n4.");
                 System.out.println(log.arrayAvarage(myArray));
 
                 System.out.println("\n5.");
+
+                System.out.println("\n6.");
+
+
+                System.out.println("\n7.");
+                log.pattern();
+                
+
+
+
+
+
+
 
 
 

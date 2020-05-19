@@ -1,5 +1,7 @@
 package com.company;
 
+import java.sql.SQLOutput;
+
 public class LogicalOp {
     public int checkBiggerNumber(int first, int second) {
         if (1 > 3) {
@@ -302,33 +304,26 @@ public class LogicalOp {
     public int[] arrayto100(){
         int[] array = new int[100];
         for (int x = 0; x < 100; x++){
-            array[x] = x;
+            array[x] = x+1;
         }
         return array;
     }
 
-    public void printArray(int[] arrayto100){
-        for (int x = 0; x < arrayto100.length; x++){
-            System.out.println(arrayto100[x]);
+    public void printArray(int[] array){
+        for (int x = 0; x < array.length; x++){
+            System.out.println(array[x]);
         }
     }
 
-    public int[] arrayEven(){
+    public int[] arrayEven(int[] arrayEvenPrint){
         int[] array = new int[100];
         for (int x = 0; x < 100; x++){
             if(x % 2 == 0){
                 System.out.println(x);
             }
         }
-        return array;
+        return array; // n-am idee cum sa pun aici sa imi ia de la 2 la 100, am incercat mai multe pozitionari.
     }
-
-    public void printArrayEven(int[] arrayEven){
-        for (int x = 0; x < arrayEven.length; x++){
-        }
-    }
-
-
 
     public float arrayAvarage(int[] arrayAvarage){
         float sum = 0;
@@ -338,21 +333,51 @@ public class LogicalOp {
        return  sum / arrayAvarage.length;
     }
 
+    public boolean arrayFind(String[] myArray2, String object) {
+        String[] myarray2 = {"masina", "fata", "casa", "baiat", "catel"};
+        object = "casa";
+        boolean find = true;
+        for (int x = 0; x < myArray2.length; x++) {
+            if (object.equals(myArray2)){
+                System.out.println(x);
+            }
+        }
+        return find; // I tried
+    }
 
+    public int arrayCheckNumber(int[] check, int number ){
+        check = new int[]{1, 23, 56, 65, 68, 90, 97};
+        int y = 54;
+        for(int x = 0; x < check.length; x++){
+            y = x;
+            }
+        return y; // I tried
+    }
 
-
-
-
-
-
-
-
+    public void pattern (){
+        String[] mystring = new String[10];
+        for ( int x = 0; x < mystring.length; x++){
+            System.out.println("-----------");
+        }
+    }
 
 
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
