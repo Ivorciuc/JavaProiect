@@ -174,8 +174,11 @@ public class Main {
                 System.out.println(log.arrayAvarage(myArray));
 
                 System.out.println("\n5.");
+                System.out.println(log.arrayFind(new String[] {"casa", "masa", "terasa", "plasa"}, "copil"));
 
                 System.out.println("\n6.");
+                System.out.println(log.arrayCheckNumber(new int[]{2, 5, 6, 23, 43, 24}, 6));
+
 
 
                 System.out.println("\n7.");

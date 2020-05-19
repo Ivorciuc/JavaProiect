@@ -1,7 +1,5 @@
 package com.company;
 
-import java.sql.SQLOutput;
-
 public class LogicalOp {
     public int checkBiggerNumber(int first, int second) {
         if (1 > 3) {
@@ -322,7 +320,7 @@ public class LogicalOp {
                 System.out.println(x);
             }
         }
-        return array; // n-am idee cum sa pun aici sa imi ia de la 2 la 100, am incercat mai multe pozitionari.
+        return array;
     }
 
     public float arrayAvarage(int[] arrayAvarage){
@@ -333,25 +331,23 @@ public class LogicalOp {
        return  sum / arrayAvarage.length;
     }
 
-    public boolean arrayFind(String[] myArray2, String object) {
-        String[] myarray2 = {"masina", "fata", "casa", "baiat", "catel"};
-        object = "casa";
-        boolean find = true;
-        for (int x = 0; x < myArray2.length; x++) {
-            if (object.equals(myArray2)){
-                System.out.println(x);
+    public boolean arrayFind(String[] array, String object) {
+        for (String line : array){
+            if(object.equals(line)){
+                return true;
             }
         }
-        return find; // I tried
+        return false;
     }
 
-    public int arrayCheckNumber(int[] check, int number ){
-        check = new int[]{1, 23, 56, 65, 68, 90, 97};
-        int y = 54;
-        for(int x = 0; x < check.length; x++){
-            y = x;
+    public int[] arrayCheckNumber(int[] check, int number ){
+        int[] array = new int[3];
+        for (int rule : check){
+            if(number == rule){
+                return new int[]{array[2]};
             }
-        return y; // I tried
+        }
+        return new int[]{0};
     }
 
     public void pattern (){
