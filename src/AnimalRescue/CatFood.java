@@ -2,18 +2,7 @@ package AnimalRescue;
 
 public class CatFood extends Food {
 
-    private String expirationDate;
-
-    public String getExpirationDate() {
-        return expirationDate;
+    public void ExpirationDate() {
+        System.out.println("Within 4 days");
     }
-
-    public void setExpirationDate(String expirationDate) {
-        this.expirationDate = expirationDate;
-    }
-
-
-
-
-
 }

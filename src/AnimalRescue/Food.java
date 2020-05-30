@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Food {
+public abstract class Food {
     private String numeMancare;
 
     private int cantitate;
@@ -21,6 +21,8 @@ public class Food {
     public void setCantitate(int cantitate){
         this.cantitate = cantitate;
     }
+
+    public abstract void ExpirationDate();
 
 
 

@@ -37,6 +37,18 @@ public class Dog extends Animal {
         System.out.println("Woof!");
     }
 
+    public void eat(){
+        System.out.println("Bones");
+    }
+
+    public void run(){
+        System.out.println("With 35 km/h ");
+    }
+
+    public void sleep(){
+        System.out.println("ZzzZzzZzz");
+    }
+
 
 
 

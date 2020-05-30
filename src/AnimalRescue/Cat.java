@@ -38,4 +38,16 @@ public class Cat extends Animal {
         System.out.println("Meow!");
     }
 
+    public void eat(){
+        System.out.println("Fish");
+    }
+
+    public void run(){
+        System.out.println("With 47 km/h ");
+    }
+
+    public void sleep(){
+        System.out.println("ZzzZzzZzz");
+    }
+
 }

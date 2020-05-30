@@ -313,11 +313,12 @@ public class LogicalOp {
         }
     }
 
-    public int[] arrayEven(int[] arrayEvenPrint){
-        int[] array = new int[100];
+    public int[] arrayEven(int[] array){
+        int i = 0;
         for (int x = 0; x < 100; x++){
             if(x % 2 == 0){
-                System.out.println(x);
+                array[i]= x;
+                i++;
             }
         }
         return array;
@@ -340,25 +341,59 @@ public class LogicalOp {
         return false;
     }
 
-    public int[] arrayCheckNumber(int[] check, int number ){
-        int[] array = new int[3];
-        for (int rule : check){
-            if(number == rule){
-                return new int[]{array[2]};
+    public int arrayCheckNumber(int[] check, int number ){
+        for (int i = 0; i < check.length; i++){
+            if(check[i] == number){
+                return i;
             }
         }
-        return new int[]{0};
+        return 0;
     }
 
-    public void pattern (){
-        String[] mystring = new String[10];
-        for ( int x = 0; x < mystring.length; x++){
-            System.out.println("-----------");
+    public void drawLines() {
+
+            char[] line = {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-',};
+
+
+
+            for (int i = 0; i <= 10; i++) {
+
+                System.out.println(line);
         }
     }
 
+    public int[] removeNrFromArray(int[] myArray, int nr) {
+
+        int[] secondArray = new int[myArray.length];
+
+        int j = 0;
+
+        for (int i = 0; i < myArray.length; i++) {
+
+            if (myArray[i] == nr)
+
+                continue;
+
+            secondArray[j++] = myArray[i];
+
+        }
+
+        int[] finArray = new int[j];
 
 
+
+        for (int i = 0; i < j; i++)
+
+            finArray[i] = secondArray[i];
+
+        return finArray;
+
+    }
+
+
+    public void javaList() {
+
+    }
 
 
 }

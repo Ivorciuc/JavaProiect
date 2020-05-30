@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class AnimalRescuer {
+public abstract class AnimalRescuer {
     private String name;
     private int age;
     private int money;
@@ -29,5 +29,15 @@ public class AnimalRescuer {
     public void setMoney(int money){
         this.money = money;
     }
+
+    public abstract void Greeting();
+
+    public abstract void AskingName();
+
+
+
+
+
+
 
 }

@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
     private String color;
@@ -17,6 +17,8 @@ public class Animal {
     public void setName(String name) {
         this.name = name;
     }
+
+
 
     public int getAge() {
         return age;
@@ -74,21 +76,13 @@ public class Animal {
         this.mancarePreferata = mancarePreferata;
     }
 
-    public void speaks(){
-        System.out.println("Speak..");
-    }
+    public abstract void speaks();
 
-    public void eat(){
-        System.out.println("Eating...");
-    }
+    public abstract void eat();
 
-    public void run(){
-        System.out.println("Running...");
-    }
+    public abstract void run();
 
-    public void sleep(){
-        System.out.println("ZzzZzzZzz");
-    }
+    public abstract void sleep();
 
 
     }

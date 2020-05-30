@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class MedicalStaff {
+public abstract class MedicalStaff {
     private String name;
     private String specialization;
     private int age;
@@ -28,4 +28,11 @@ public class MedicalStaff {
     public void setAge(int age) {
         this.age = age;
     }
+
+
+    public abstract void Greeting();
+
+    public abstract void AskingName();
 }
+
+

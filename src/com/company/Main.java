@@ -1,9 +1,9 @@
 package com.company;
-
+import java.util.ArrayList;
+import java.util.List;
 public class Main {
 
-
-        public static void main(String[] args) {
+        public static <list> void main(String[] args) {
                 int x = 1;
                 int y = 3;
                 int z = 5;
@@ -166,23 +166,34 @@ public class Main {
 
 
                 System.out.println("\n3.");
-                int[] arrayEvenPrint = new int[100];
-                log.arrayEven(arrayEvenPrint);
 
 
                 System.out.println("\n4.");
                 System.out.println(log.arrayAvarage(myArray));
 
                 System.out.println("\n5.");
-                System.out.println(log.arrayFind(new String[] {"casa", "masa", "terasa", "plasa"}, "copil"));
+                System.out.println(log.arrayFind(new String[] {"casa", "masa", "terasa", "plasa"}, "casa"));
 
                 System.out.println("\n6.");
-                System.out.println(log.arrayCheckNumber(new int[]{2, 5, 6, 23, 43, 24}, 6));
-
-
+                System.out.println(log.arrayCheckNumber(new int[] {3, 5, 6, 7}, 5));
 
                 System.out.println("\n7.");
-                log.pattern();
+                log.drawLines();
+
+                System.out.println("\n8.");
+                System.out.println(log.removeNrFromArray(new int[] {2, 4, 6, 8}, 6));
+
+
+
+                System.out.println("\n\n-- TEMA JAVA LISTS: -- ");
+
+                System.out.println("\n1.");
+
+
+
+
+
+
                 
 
 
