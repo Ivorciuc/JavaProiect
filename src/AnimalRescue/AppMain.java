@@ -134,21 +134,22 @@ public class AppMain {
        oase.setNumeMancare("Bones");
        oase.setCantitate(100);
 
-       System.out.println("\nThis is the animal food: \n");
+       System.out.println("\nThis is the dog food: \n");
 
-       System.out.println("First food: " + oase.getNumeMancare());
+       System.out.println("Food: " + oase.getNumeMancare());
        System.out.println("Amount: " + oase.getCantitate());
 
        CatFood fish = new CatFood();
        fish.setNumeMancare("Fish");
        fish.setCantitate(23);
-       fish.setExpirationDate("02/06/2020");
 
-       System.out.println("\nThis is the animal food: \n");
 
-       System.out.println("First food: " + fish.getNumeMancare());
+       System.out.println("\nThis is the cat food: \n");
+
+       System.out.println("Food: " + fish.getNumeMancare());
        System.out.println("Amount: " + fish.getCantitate());
-       System.out.println("Expiration Date: " + fish.getExpirationDate());
+       fish.ExpirationDate();
+
 
 
        Activities activities = new Activities();

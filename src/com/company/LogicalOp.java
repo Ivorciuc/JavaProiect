@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.List;
+
 public class LogicalOp {
     public int checkBiggerNumber(int first, int second) {
         if (1 > 3) {
@@ -390,10 +392,6 @@ public class LogicalOp {
 
     }
 
-
-    public void javaList() {
-
-    }
 
 
 }

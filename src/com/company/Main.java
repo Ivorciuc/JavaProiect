@@ -1,6 +1,8 @@
 package com.company;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+
 public class Main {
 
         public static <list> void main(String[] args) {
@@ -166,6 +168,7 @@ public class Main {
 
 
                 System.out.println("\n3.");
+                System.out.println(Arrays.toString(log.arrayEven(myArray)));
 
 
                 System.out.println("\n4.");
@@ -181,13 +184,66 @@ public class Main {
                 log.drawLines();
 
                 System.out.println("\n8.");
-                System.out.println(log.removeNrFromArray(new int[] {2, 4, 6, 8}, 6));
+                System.out.println( Arrays.toString(log.removeNrFromArray((new int[] {2, 4, 6, 8}), 6)));
 
 
 
                 System.out.println("\n\n-- TEMA JAVA LISTS: -- ");
+                JavaList javaList = new JavaList();
+                List<Integer> myList = new ArrayList();
+                myList.add(1);
+                myList.add(2);
+                myList.add(3);
+                myList.add(4);
+                myList.add(5);
+
 
                 System.out.println("\n1.");
+                javaList.FirstList(myList);
+
+                System.out.println("\n2.");
+                javaList.AddList(myList, 7);
+                System.out.println(myList);
+
+                System.out.println("\n3.");
+                List<Integer> list1 = new ArrayList();
+                javaList.FirstNumberToList(list1, 8);
+                System.out.println(list1);
+
+                System.out.println("\n4.");
+                List<Integer> list2 = new ArrayList();
+                javaList.FromTheEnd(list2);
+
+                System.out.println("\n5.");
+                List<String> list3 = new ArrayList();
+                javaList.StringList(list3, 2, "om");
+                System.out.println(list3);
+
+                System.out.println("\n6.");
+                javaList.Ex6(myList, 10);
+                System.out.println(myList);
+
+                System.out.println("\n7.");
+                List<Integer> list4 = new ArrayList();
+                javaList.Ex7(list4);
+
+                System.out.println("\n8.");
+                List<Integer> list5 = new ArrayList();
+                javaList.BiggestNumber(list5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
