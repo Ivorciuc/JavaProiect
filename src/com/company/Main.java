@@ -43,13 +43,13 @@ public class Main {
                 System.out.println(" " + cal.restulimpartirii(12, 22));
 
                 System.out.println("\nCelsius:" );
-                cal.Celsius();
+                cal.celsius();
 
                 System.out.println("\nMeters:");
-                cal.Metri();
+                cal.metri();
 
                 System.out.println("\nDistance:");
-                cal.Distance();
+                cal.distance();
 
 
 
@@ -100,7 +100,7 @@ public class Main {
                 System.out.println("\n-- TEMA JAVA FOR LOOPS: -- ");
 
                 System.out.println("\n1." );
-                log.OneToOneHunDred(1);
+                log.oneToOneHunDred(1);
 
                 System.out.println("\n2.");
                 log.oneToMinusOneHundred(0);
@@ -199,37 +199,40 @@ public class Main {
 
 
                 System.out.println("\n1.");
-                javaList.FirstList(myList);
+                javaList.firstList(myList);
 
                 System.out.println("\n2.");
-                javaList.AddList(myList, 7);
+                javaList.addList(myList, 7);
                 System.out.println(myList);
 
                 System.out.println("\n3.");
                 List<Integer> list1 = new ArrayList();
-                javaList.FirstNumberToList(list1, 8);
+                javaList.firstNumberToList(list1, 8);
                 System.out.println(list1);
 
                 System.out.println("\n4.");
                 List<Integer> list2 = new ArrayList();
-                javaList.FromTheEnd(list2);
+                javaList.fromTheEnd(list2);
 
                 System.out.println("\n5.");
                 List<String> list3 = new ArrayList();
-                javaList.StringList(list3, 2, "om");
+                javaList.stringList(list3, 2, "om");
                 System.out.println(list3);
 
                 System.out.println("\n6.");
-                javaList.Ex6(myList, 10);
+                javaList.ex6(myList, 10);
                 System.out.println(myList);
 
                 System.out.println("\n7.");
                 List<Integer> list4 = new ArrayList();
-                javaList.Ex7(list4);
+                javaList.ex7(list4);
 
                 System.out.println("\n8.");
                 List<Integer> list5 = new ArrayList();
-                javaList.BiggestNumber(list5);
+                javaList.biggestNumber(list5);
+
+
+
 
 
 

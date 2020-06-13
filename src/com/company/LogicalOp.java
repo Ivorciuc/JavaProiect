@@ -1,6 +1,6 @@
 package com.company;
 
-import java.util.List;
+import java.util.Scanner;
 
 public class LogicalOp {
     public int checkBiggerNumber(int first, int second) {
@@ -97,7 +97,7 @@ public class LogicalOp {
         }
     }
 
-    public void OneToOneHunDred(int number) {
+    public void oneToOneHunDred(int number) {
         for (int x = number; x <= 100; x++) {
             System.out.println(x);
         }
@@ -390,6 +390,27 @@ public class LogicalOp {
 
         return finArray;
 
+    }
+
+    public void array(int[] arr, int number){
+        Scanner scanner = new Scanner(System.in);
+        number = 3;
+        try{
+            System.out.println("Insert a position here:");
+            System.out.println(arr[scanner.nextInt()]);
+        } catch (IndexOutOfBoundsException error){
+            System.out.println("Inside catch, number too large");
+        }
+        return;
+
+    }
+
+    public void waitting(int number) {
+        try {
+            Thread.sleep(number);
+        } catch (InterruptedException error) {
+            System.out.println("Something went wrong.");
+        }
     }
 
 

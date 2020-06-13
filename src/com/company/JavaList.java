@@ -6,17 +6,17 @@ import java.util.List;
 
 public class JavaList {
 
-    public void FirstList(List<Integer> list) {
+    public void firstList(List<Integer> list) {
         for(int x = 0; x < list.size(); x++){
             System.out.println(list.get(x));
         }
     }
 
-    public void AddList(List<Integer> list, int number){
+    public void addList(List<Integer> list, int number){
         list.add(number);
     }
 
-    public void FirstNumberToList(List<Integer> list, int number){
+    public void firstNumberToList(List<Integer> list, int number){
         list.add(1);
         list.add(2);
         list.add(3);
@@ -25,7 +25,7 @@ public class JavaList {
         list.add(0, number);
     }
 
-    public void FromTheEnd(List<Integer> list){
+    public void fromTheEnd(List<Integer> list){
         list.add(1);
         list.add(2);
         list.add(3);
@@ -37,7 +37,7 @@ public class JavaList {
         }
     }
 
-    public void StringList(List<String> list, int number, String om){
+    public void stringList(List<String> list, int number, String om){
         list.add("sarpe");
         list.add("vaca");
         list.add("rata");
@@ -46,11 +46,11 @@ public class JavaList {
         list.add(number, om);
     }
 
-    public void Ex6(List<Integer> list, int number){
+    public void ex6(List<Integer> list, int number){
         list.add(0, number);
     }
 
-    public void Ex7(List<Integer> list) {
+    public void ex7(List<Integer> list) {
         list.add(1);
         list.add(2);
         list.add(3);
@@ -63,7 +63,7 @@ public class JavaList {
         System.out.println("Pe pozitia 3 este valoarea: " + list.get(4));
     }
 
-    public void BiggestNumber(List<Integer> list){
+    public void biggestNumber(List<Integer> list){
         list.add(1);
         list.add(2);
         list.add(3);

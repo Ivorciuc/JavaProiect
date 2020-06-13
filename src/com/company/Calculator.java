@@ -53,7 +53,7 @@ public class Calculator {
         return Calcul;
     }
 
-    public void Celsius() {
+    public void celsius() {
         double x = 5;
         double y = 9;
         double z = 32;
@@ -63,7 +63,7 @@ public class Calculator {
         System.out.println("  Celsius: " + Celsius);
     }
 
-    public  void Metri() {
+    public  void metri() {
         // 1 Inch = 0.0254 Metri
         double Inch = 1;
         double UnMetru;
@@ -72,7 +72,7 @@ public class Calculator {
         System.out.println("  Un inch in Metri este: " + UnMetru);
     }
 
-        public  void Distance () {
+        public  void distance () {
             double DistantaInMetri = 100000;
             double TimpulInSecunde = 4 * 60 * 60;
             double MetriPeSecunda;
