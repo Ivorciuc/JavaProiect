@@ -1,14 +1,24 @@
 package com.company;
 
 public class Calculator {
-    public int add(int x, int y) {
+    public int sum(int x, int y) {
         int rezultat = x + y;
         return rezultat;
     }
 
-    public float add(byte x, float y) {
+    public float sum(byte x, float y) {
         float rezultat = x + y;
         return rezultat;
+    }
+
+    public int substraction(int x, int y) {
+        int rezultat = x - y;
+        return rezultat;
+    }
+
+    public int substraction(int x, float y) {
+        float rezultat = x - y;
+        return (int) rezultat;
     }
 
     public int multipli( int y, short z){
@@ -31,9 +41,9 @@ public class Calculator {
         return rezultat;
     }
 
-    public double medianumerelor(int x, int y, int z) {
-        int Calcul = x + y + z;
-        double Media = Calcul / 3;
+    public double numbersAvarage(double x, double y) {
+        double Calcul = x + y;
+        double Media = Calcul / 2;
         return Media;
     }
 

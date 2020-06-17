@@ -13,10 +13,10 @@ public class Main {
 
                 Calculator cal = new Calculator();
                 System.out.println("1.");
-                System.out.println(" " + cal.add(1, 4));
+                System.out.println(" " + cal.sum(1, 4));
 
                 System.out.println("2.");
-                System.out.println(" " + cal.add((byte)126, 1.5F));
+                System.out.println(" " + cal.sum((byte)126, 1.5F));
 
                 System.out.println("3.");
                 System.out.println(" " + cal.multipli(5, (short) 3));
@@ -31,10 +31,10 @@ public class Main {
                 System.out.println(" " + cal.division(55, 1, 10));
 
                 System.out.println("7. ");
-                System.out.println(" " + cal.medianumerelor(25, 5, 22));
+                System.out.println(" " + cal.numbersAvarage(25, 5));
 
                 System.out.println("8. ");
-                System.out.println(" " + cal.medianumerelor(10, 2, 2));
+                System.out.println(" " + cal.numbersAvarage(10, 2));
 
                 System.out.println("9. ");
                 System.out.println(" " + cal.restulimpartirii(25, 1.5f));
@@ -59,12 +59,12 @@ public class Main {
                 System.out.println("\n--DE AICI INCEPE LOGICAL OP--");
 
                 System.out.println("1.");
-                int biggest = log.checkBiggerNumber(1,3);
+                int biggest = log.getHigherNumber(1,3);
                 System.out.println("  The biggest number is: " + biggest);
 
                 System.out.println("2.");
                 String name = "FastTrackIt";
-                System.out.println(log.checkiftextisFastTrackIt(name));
+                System.out.println(log.checkIfText(name));
 
                 System.out.println("3.");
                 String text = "FastTrackIt";

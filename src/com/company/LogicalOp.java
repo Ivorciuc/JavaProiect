@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class LogicalOp {
-    public int checkBiggerNumber(int first, int second) {
+    public int getHigherNumber(int first, int second) {
         if (1 > 3) {
             return first;
         } else {
@@ -11,7 +11,7 @@ public class LogicalOp {
         }
     }
 
-    public String checkiftextisFastTrackIt(String name) {
+    public String checkIfText(String name) {
         if (name.equals("FastTrackIt")) {
             return "  Learning text comparison.";
         } else {
